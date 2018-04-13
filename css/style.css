@@ -1,0 +1,210 @@
+body, .fio-header-wrapper, .fio-header-slider, .fio-slide-content {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+body {
+    height: 100%;
+    font-family: 'Questrial', sans-serif;
+}
+.wrap {
+    position: relative;
+}
+.fio-header-overlay {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #65737e;
+    opacity: 0.55;
+}
+.slide {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.fio-span-wrapper {
+    padding: 40px;
+    background: #343d46;
+    border: 1px solid #fdfeff;
+    border-radius: 4px;
+    margin: 0 auto;
+    letter-spacing: 6px;
+    z-index: 2;  
+    opacity: 0.75;
+    margin-right: 14px;
+    margin-left: 14px;
+}
+.fio-slide1 {
+    background-image: url('../img/fio-header-bg1.jpeg');
+}
+.fio-slide2 {
+    background-image: url('../img/fio-header-bg2.jpeg');
+}
+.fio-slide3 {
+    background-image: url('../img/fio-header-bg3.jpeg');
+}
+.fio-slide-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.fio-slide-content span {
+    font-size: 4rem;
+    color: #fff;
+    z-index: 2;
+}
+.arrow-left {
+    color: #fff;
+    cursor: pointer;
+    font-size: 80px;
+    position: absolute;
+    top: 50%;
+    margin-top: -45px; 
+    left: 0;
+    margin-left: 30px;   
+}
+.arrow-right {
+    color: #fff;
+    cursor: pointer;
+    font-size: 80px;
+    position: absolute;
+    top: 50%;
+    margin-top: -45px; 
+    right: 0;
+    margin-right: 30px; 
+}
+/* .arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+#fio-arrow-left {
+    border-width: 30px 40px 30px 0;
+    left: 0;
+    margin-left: 30px;
+    border-color: transparent #fff transparent transparent;
+} */
+/* #fio-arrow-right {
+    border-width: 30px 0 30px 40px;
+    right: 0;
+    margin-right: 30px;
+    border-color: transparent transparent transparent #fff;
+} */
+.fio-cta button{
+    font-size: 22px;
+}
+#canvas {
+    margin: auto;
+    background-color: #ececec;
+    width: 100%;
+}
+.is-grouped {
+    justify-content: center !important;
+}
+.fio-button-desc {
+    width: 100px;
+}
+.fio-effect-wrapper .column {
+    text-align: center;
+}
+.fio-effect-wrapper .button {
+    width: 100px;
+}
+.fio-image-options {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+a.fio-filter-btn.active {
+    background-color: red !important;
+}
+
+/* Media Query */
+@media (max-width: 1230px) {
+    .fio-button-wrapper .button {
+        font-size: 12px;
+    }
+}
+@media (max-width: 1224px) {
+    .fio-slide-content span {
+        font-size: 2.5rem;
+    }
+}
+@media (max-width: 965px) {
+    .fio-slide-content span {
+        font-size: 2.2rem;
+    }
+    .fio-span-wrapper {
+        padding: 18px;
+    }
+    .arrow {
+        margin-top: -20px;
+    }
+    .arrow-left, .arrow-right {
+        font-size: 70px;
+    }
+}
+@media (max-width: 818px) {
+    .fio-slide-content span {
+        font-size: 1.6rem;
+    }
+    .fio-span-wrapper {
+        padding: 15px;
+    }
+    .arrow {
+        margin-top: -15px;
+    }
+    .arrow-left, .arrow-right {
+        font-size: 60px;
+    }
+    .fio-cta-button {
+        font-size: 18px !important;
+    }
+}
+@media (max-width: 680px) {
+    .fio-slide-content span {
+        font-size: .85rem;
+    }
+    .arrow-left, .arrow-right {
+        font-size: 40px;
+    }
+    .fio-cta-button {
+        font-size: 14px !important;
+    }
+
+}
+@media (max-width: 520px) {
+    .fio-span-wrapper {
+        margin-right: 80px;
+        margin-left: 80px;
+    }
+    .arrow-left, .arrow-right {
+        font-size: 30px;
+    }
+}
+@media (max-width: 400px) {
+    .fio-slide-content span {
+        font-size: 1.2rem !important;
+    }
+    .fio-span-wrapper {
+        padding: 30px;
+    }
+}
+@media (max-width: 360px) {
+    .fio-slide-content span {
+        font-size: .75rem !important;
+    }
+    .fio-span-wrapper {
+        padding: 30px;
+    }
+}
