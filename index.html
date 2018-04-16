@@ -1,66 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/camanjs/4.0.0/caman.full.min.js"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Filteritout | Home</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/camanjs/4.0.0/caman.full.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Filteritout | Home</title>
 </head>
+
 <body>
   <div class="fio-header-wrapper">
     <div class="fio-header-overlay"></div>
-      <div class="arrow-left" id="fio-arrow-left"><i class="far fa-arrow-alt-circle-left"></i></div>
-      <!-- <div class="arrow" id="fio-arrow-left"></div> -->
-      <div class="fio-header-slider">
-        <div class="slide fio-slide1">
-          <div class="fio-slide-content">
-            <div class="fio-span-wrapper">
-              <span>My life needs editing</span>
-              <div class="fio-cta">
-                <button class="button is-light fio-cta-button">Get Started</button>
-              </div>
+    <div class="arrow-left" id="fio-arrow-left">
+      <i class="far fa-arrow-alt-circle-left"></i>
+    </div>
+    <!-- <div class="arrow" id="fio-arrow-left"></div> -->
+    <div class="fio-header-slider">
+      <div class="slide fio-slide1">
+        <div class="fio-slide-content">
+          <div class="fio-span-wrapper">
+            <span>My life needs editing</span>
+            <div class="fio-cta">
+              <button class="button is-light fio-cta-button">Get Started</button>
             </div>
           </div>
         </div>
-        <div class="slide fio-slide2">
-          <div class="fio-slide-content">
-              <div class="fio-span-wrapper">
-                <span>Eveyone has their own filter</span>
-                <div class="fio-cta">
-                  <button class="button is-light fio-cta-button">Get Started</button>
-                </div>
-              </div>
+      </div>
+      <div class="slide fio-slide2">
+        <div class="fio-slide-content">
+          <div class="fio-span-wrapper">
+            <span>Eveyone has their own filter</span>
+            <div class="fio-cta">
+              <button class="button is-light fio-cta-button">Get Started</button>
             </div>
-        </div>
-        <div class="slide fio-slide3">
-          <div class="fio-slide-content">
-              <div class="fio-span-wrapper">
-                <span>Try to be a filter</span>
-                <div class="fio-cta">
-                  <button class="button is-light fio-cta-button">Get Started</button>
-                </div>
-              </div>
-            </div>
+          </div>
         </div>
       </div>
-      <div class="arrow-right" id="fio-arrow-right"><i class="far fa-arrow-alt-circle-right"></i></div>
-      <!-- <div class="arrow" id="fio-arrow-right"></div> -->
+      <div class="slide fio-slide3">
+        <div class="fio-slide-content">
+          <div class="fio-span-wrapper">
+            <span>Try to be a filter</span>
+            <div class="fio-cta">
+              <button class="button is-light fio-cta-button">Get Started</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="arrow-right" id="fio-arrow-right">
+      <i class="far fa-arrow-alt-circle-right"></i>
+    </div>
+    <!-- <div class="arrow" id="fio-arrow-right"></div> -->
   </div>
   <script>
-    $('.fio-cta-button').click(function() {
+    $('.fio-cta-button').click(function () {
       $('html, body').animate({
         scrollTop: $('.fio-main-content').offset().top
       }, 800);
     });
   </script>
-  
+
 
   <section class="section fio-main-content">
     <div class="container">
@@ -81,11 +88,14 @@
       <div class="columns">
         <div class="column is-half">
           <h4 class="sub-title has-text-centered has-text-grey is-size-2">What is Filteritout?</h4>
-          <p class="has-text-centered is-size-4">Filteritout is an online image filter that builded with CamanJS. You can upload your image file here and apply various type of filter effects.</p>
+          <p class="has-text-centered is-size-4">Filteritout is an online image filter that builded with CamanJS. You can upload your image file here and apply
+            various type of filter effects.</p>
         </div>
         <div class="column is-half">
           <h4 class="sub-title has-text-centered has-text-grey is-size-2">What build Filteritout?</h4>
-          <p class="has-text-centered is-size-4">Filteritout was builded by Bulma CSS Framework, and the canvas manipulation in Javascript (Caman). Source material:  <a href="https://www.youtube.com/watch?v=MEENB3_9yUw" target="_blank">CamanJS - Build An Image Filter Web App</a></p>
+          <p class="has-text-centered is-size-4">Filteritout was builded by Bulma CSS Framework, and the canvas manipulation in Javascript (Caman). Source material:
+            <a href="https://www.youtube.com/watch?v=MEENB3_9yUw" target="_blank">CamanJS - Build An Image Filter Web App</a>
+          </p>
         </div>
       </div>
     </div>
@@ -107,19 +117,19 @@
                 </span>
               </span>
             </label>
-          </div>          
+          </div>
         </div>
       </div>
 
       <div class="columns">
         <div class="column">
-          <canvas id="canvas"></canvas> 
+          <canvas id="canvas" data-caman-hidpi-disabled="true"></canvas>
         </div>
       </div>
-      
+
       <div class="columns">
         <div class="column">
-          <h4 class="has-text-centered is-size-2">Filters</h4> 
+          <h4 class="has-text-centered is-size-2">Filters</h4>
         </div>
       </div>
 
@@ -135,7 +145,7 @@
             <p class="control">
               <a class="button is-rounded is-medium fio-brightness-add fio-filter-btn">+</a>
             </p>
-          </div>           
+          </div>
         </div>
 
         <div class="column">
@@ -149,9 +159,9 @@
             <p class="control">
               <a class="button is-rounded is-medium fio-contrast-add fio-filter-btn">+</a>
             </p>
-          </div>           
-        </div>  
-       
+          </div>
+        </div>
+
         <div class="column">
           <div class="field is-grouped">
             <p class="control">
@@ -163,9 +173,9 @@
             <p class="control">
               <a class="button is-rounded is-medium fio-saturation-add fio-filter-btn">+</a>
             </p>
-          </div>           
-        </div>  
-        
+          </div>
+        </div>
+
         <div class="column">
           <div class="field is-grouped">
             <p class="control">
@@ -177,13 +187,13 @@
             <p class="control">
               <a class="button is-rounded is-medium fio-vibrance-add fio-filter-btn">+</a>
             </p>
-          </div>           
-        </div>         
-      </div> 
-      
+          </div>
+        </div>
+      </div>
+
       <div class="columns">
         <div class="column">
-          <h4 class="has-text-centered is-size-2">Effects</h4> 
+          <h4 class="has-text-centered is-size-2">Effects</h4>
         </div>
       </div>
 
@@ -196,7 +206,7 @@
         </div>
         <div class="column">
           <a class="button is-dark is-medium fio-clarity fio-filter-btn fio-filter-btn-effect">Clarity</a>
-          </div>
+        </div>
         <div class="column">
           <a class="button is-dark is-medium fio-sin-city fio-filter-btn fio-filter-btn-effect">Sin City</a>
         </div>
@@ -205,13 +215,13 @@
         </div>
         <div class="column">
           <a class="button is-dark is-medium fio-pinhole fio-filter-btn fio-filter-btn-effect">Pinhole</a>
-        </div>        
+        </div>
       </div>
 
-      <script>
+      <!-- <script>
         function toggleItem(elem) {
           for (var i = 0; i < elem.length; i++) {
-            elem[i].addEventListener("click", function(e) {
+            elem[i].addEventListener("click", function (e) {
               var current = this;
               for (var i = 0; i < elem.length; i++) {
                 if (current != elem[i]) {
@@ -227,7 +237,7 @@
           };
         }
         toggleItem(document.querySelectorAll('.fio-filter-btn-effect'));
-      </script>
+      </script> -->
 
       <div class="columns fio-image-options">
         <div class="column is-half has-text-centered">
@@ -244,11 +254,14 @@
     <div class="container">
       <div class="content has-text-centered">
         <p>
-          This website is design by <a href="https://luisyc.com/" target="_blank">luisyc</a>. Source material: <a href="https://www.youtube.com/watch?v=MEENB3_9yUw" target="_blank">CamanJS - Build An Image Filter Web.</a>
+          This website is design by
+          <a href="https://luisyc.com/" target="_blank">luisyc</a>. Source material:
+          <a href="https://www.youtube.com/watch?v=MEENB3_9yUw" target="_blank">CamanJS - Build An Image Filter Web.</a>
         </p>
       </div>
     </div>
   </footer>
   <script src="app.js"></script>
 </body>
+
 </html>
